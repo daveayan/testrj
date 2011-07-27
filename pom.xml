@@ -1,6 +1,42 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>daveayan</groupId>
-  <artifactId>testrj</artifactId>
-  <version>1.0-SNAPSHOT</version>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>daveayan</groupId>
+	<artifactId>testrj</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<dependencies>
+		<dependency>
+			<groupId>daveayan</groupId>
+			<artifactId>zen</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>r09</version>
+		</dependency>
+	</dependencies>
+	<description>record and run test</description>
+	<url>http://github.com/daveayan/testrj</url>
+	<ciManagement>
+		<url>https://daveayan.ci.cloudbees.com/job/testrj-ci/</url>
+	</ciManagement>
+	<inceptionYear>05/2011</inceptionYear>
+	<scm>
+		<developerConnection>Ayan Dave</developerConnection>
+		<url>http://github.com/daveayan</url>
+	</scm>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
