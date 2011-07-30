@@ -11,8 +11,5 @@ public class UsageTest {
 		Person person = Person.getFullyLoadedInstance();
 		Account account = new Account();
 		SomeComplexController controller = new SomeComplexController();
-		MethodUnderTest mut = MethodUnderTest.is(controller, "someComplexMethod").using(person, account);
-		Object returnObject = controller.someComplexMethod(person, account);
-		mut.returnValueIs(returnObject).and().persist();
 	}
 }
