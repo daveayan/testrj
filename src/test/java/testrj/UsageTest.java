@@ -2,14 +2,15 @@ package testrj;
 
 import org.junit.Test;
 
-import testrj.sample.controller.SomeComplexController;
-import testrj.sample.domain.Account;
-import testrj.sample.domain.Person;
+import rjson.utils.RjsonUtil;
+import testrj.domain.SerializedData;
 
 public class UsageTest {
 	@Test public void sampleUsage() {
-		Person person = Person.getFullyLoadedInstance();
-		Account account = new Account();
-		SomeComplexController controller = new SomeComplexController();
+		SerializedData sd = new SerializedData();
+//		sd.setSerializedData("Hello World".getBytes());
+		
+		String data = RjsonUtil.completeSerializer().toJson(sd);
+		System.out.println(data);
 	}
 }
