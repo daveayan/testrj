@@ -1,0 +1,4 @@
+{
+  "serializedData": "Hello World",
+  "class": "testrj.domain.SerializedData"
+}

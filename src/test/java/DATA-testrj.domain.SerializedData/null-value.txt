@@ -1,0 +1,4 @@
+{
+  "serializedData": null,
+  "class": "testrj.domain.SerializedData"
+}
