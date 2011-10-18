@@ -1,0 +1,63 @@
+{
+  "parameter": {
+    "id": 1,
+    "accounts": [{
+      "id": 1,
+      "balance": 100,
+      "accountNumber": 123,
+      "lastUpdate": null,
+      "class": "testrj.sample.domain.Account",
+      "someMap": {
+        "A": 100,
+        "B": 200
+      }
+    }],
+    "name": "QWERTY",
+    "class": "testrj.sample.domain.Person",
+    "drives": [
+      {
+        "class": "testrj.sample.domain.Car",
+        "numberOfWheels": 4
+      },
+      {
+        "class": "testrj.sample.domain.Scooter",
+        "numberOfWheels": 2
+      }
+    ],
+    "addresses": {
+      "Home": {
+        "id": 1,
+        "zip": 43016,
+        "address": "tuttles creek",
+        "state": "OH",
+        "class": "testrj.sample.domain.Address",
+        "city": "Dublin"
+      },
+      "Office": {
+        "id": 1,
+        "zip": 43235,
+        "address": "sawmill village dr",
+        "state": "OH",
+        "class": "testrj.sample.domain.Address",
+        "city": "Columbus"
+      }
+    },
+    "phones": [
+      {
+        "id": 1,
+        "areaCode": 443,
+        "class": "testrj.sample.domain.PhoneNumber",
+        "number": 3233323
+      },
+      {
+        "id": 1,
+        "areaCode": 657,
+        "class": "testrj.sample.domain.PhoneNumber",
+        "number": 9466354
+      }
+    ]
+  },
+  "class": "testrj.domain.RecordedObject",
+  "type": "testrj.sample.domain.Person",
+  "referenceName": null
+}

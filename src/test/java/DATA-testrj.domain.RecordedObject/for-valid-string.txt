@@ -1,0 +1,6 @@
+{
+	class:testrj.domain.RecordedObject,
+	parameter:Hello World,
+	type:java.lang.String,
+	referenceName:null
+}

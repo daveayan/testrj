@@ -1,0 +1,6 @@
+{
+  "parameter": null,
+  "class": "testrj.domain.RecordedObject",
+  "type": null,
+  "referenceName": null
+}

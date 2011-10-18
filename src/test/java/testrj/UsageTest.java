@@ -3,14 +3,12 @@ package testrj;
 import org.junit.Test;
 
 import rjson.utils.RjsonUtil;
-import testrj.domain.SerializedData;
+import testrj.domain.RecordedObject;
 
 public class UsageTest {
 	@Test public void sampleUsage() {
-		SerializedData sd = new SerializedData();
-//		sd.setSerializedData("Hello World".getBytes());
-		
-		String data = RjsonUtil.completeSerializer().toJson(sd);
-		System.out.println(data);
+		RecordedObject ro = new RecordedObject();
+		String json = RjsonUtil.reformat(RjsonUtil.completeSerializer().toJson(ro));
+		System.out.println(json);
 	}
 }
