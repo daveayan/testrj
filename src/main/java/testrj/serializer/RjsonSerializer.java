@@ -15,6 +15,6 @@ public class RjsonSerializer implements Serializer {
 
 	private static Rjson serializer;
 	static {
-		serializer = Rjson.newInstance().andIgnoreModifiers();
+		serializer = Rjson.newInstance().andRecordAllModifiers();
 	}
 }
