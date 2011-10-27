@@ -1,7 +1,6 @@
 package testrj.sample.domain;
 
 import rjson.Rjson;
-import rjson.printer.Printer;
 import rjson.transformer.JsonToObjectTransformer;
 import rjson.transformer.ObjectToJsonTransformer;
 import transformers.Context;
@@ -11,9 +10,9 @@ public class SampleBothTransformer implements ObjectToJsonTransformer, JsonToObj
 		return false;
 	}
 
-	public void transformToJson(Object object, Printer printer, Rjson rjson) {
-
-	}
+//	public void transformToJson(Object object, Printer printer, Rjson rjson) {
+//
+//	}
 
 	public boolean canConvertToObject(Object object) {
 		return false;
